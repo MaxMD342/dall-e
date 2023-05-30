@@ -19,4 +19,4 @@ def index():
         )
         return redirect(url_for("index", result=response['data'][0]['url']))
     result = request.args.get("result")
-    return render_template("index.html", result=result)
+    return render_template("templates/index.html", result=result)
